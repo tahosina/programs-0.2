@@ -1,0 +1,13 @@
+class Palindrome:
+    def __init__(self, word):
+        self.word = word
+
+    def is_palindrome(self):
+        if self.word == self.word[::-1]:
+            print("Palindrome")
+        else:
+            print("Not Palindrome")
+
+word = input("Enter word: ")
+p = Palindrome(word)
+p.is_palindrome()

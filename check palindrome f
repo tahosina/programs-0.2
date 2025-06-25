@@ -1,0 +1,13 @@
+class Number:
+    def __init__(self, num):
+        self.num = num
+
+    def check(self):
+        if self.num % 2 == 0:
+            print("Even")
+        else:
+            print("Odd")
+
+num = int(input("Enter number: "))
+n = Number(num)
+n.check()

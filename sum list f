@@ -1,0 +1,7 @@
+def sum_list():
+    nums = input("Enter numbers (space separated): ")
+    nums = [int(n) for n in nums.split()]
+    print("Sum is:", sum(nums))
+
+sum_list()
+

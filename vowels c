@@ -1,0 +1,14 @@
+class VowelCounter:
+    def __init__(self, text):
+        self.text = text
+
+    def count_vowels(self):
+        count = 0
+        for ch in self.text:
+            if ch.lower() in "aeiou":
+                count += 1
+        print("Vowels:", count)
+
+text = input("Enter text: ")
+vc = VowelCounter(text)
+vc.count_vowels()
